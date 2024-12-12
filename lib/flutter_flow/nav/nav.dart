@@ -70,6 +70,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'SettingsPage',
           path: '/settingsPage',
           builder: (context, params) => const SettingsPageWidget(),
+        ),
+        FFRoute(
+          name: 'HomePage2',
+          path: '/homePage2',
+          builder: (context, params) => HomePage2Widget(
+            currentPageIndex: params.getParam(
+              'currentPageIndex',
+              ParamType.int,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

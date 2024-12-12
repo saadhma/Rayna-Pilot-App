@@ -7,3 +7,4 @@ export '/pages/post_page/post_page_widget.dart' show PostPageWidget;
 export '/pages/discussion_page/discussion_page_widget.dart'
     show DiscussionPageWidget;
 export '/pages/settings_page/settings_page_widget.dart' show SettingsPageWidget;
+export '/pages/home_page2/home_page2_widget.dart' show HomePage2Widget;
